@@ -1,17 +1,16 @@
 import React from 'react';
-let image = require("../images/content-navlink-attorneys.jpg")
 let image1 = require("../images/sub-02-subrogation.jpg")
 let image2 = require("../images/sub-02-litigation.jpg")
 let image3 = require("../images/sub-02-business.jpg")
 let image4 = require("../images/sub-02-warehouse.jpg")
     
-export default function Services() {
+export default function Portfolio() {
     return (
         <React.Fragment>
             <div class="row justify-content-md-left">
                 <div class="col-3 sidebar">
                     <ul class="list-unstyled components">
-                        <p>What We Do</p>
+                        <p>Portfolio</p>
                             <li class="active">
                                 <a href="#" styles="color: white">Subrogation</a>
                             </li>
@@ -49,7 +48,6 @@ export default function Services() {
                                 <a href="#" styles="color: white">Labor/Employment</a>
                             </li>
                     </ul>
-                            < img src={image.default} alt="image not found" />
             </div>
 
                             <div class="col-sm-9">

@@ -1,7 +1,7 @@
 import React from 'react';
 let image = require("../images/content-navlink-career.jpg")
 
-export default function Location() {
+export default function CV() {
     return (
         <React.Fragment>
             <div class="row justify-content-md-left">

@@ -3,11 +3,10 @@ import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './About';
-import Services from './Services';
-import Location from './Location';
-import Index from './Index';
+import Portfolio from './Portfolio';
+import CV from './CV';
+import Home from './Home';
 import Contact from './Contact';
-import Attorneys from './Attorneys';
 import { useAuth } from '../context/AuthContext' 
 
 export const App = () => {
@@ -23,7 +22,7 @@ export const App = () => {
     <div className="wrapper">
       <BrowserRouter>
         <nav class="navbar navbar-expand-lg container-md navbar-light bg-light">
-          <a class="navbar-brand" href="/">NIELSEN, ZEHE & ANTAS, P.C.</a>
+          <a class="navbar-brand" href="/">DARREN P. TRAN</a>
         <form class="container-fluid justify-content-end">
           {
             !currentUser.loggedIn
@@ -41,28 +40,24 @@ export const App = () => {
       </nav>
         <ul class="nav justify-content-center border bg-light">
           <li class="nav-item">
-            <a class="nav-link" href="/about">WHO WE ARE</a>
+            <a class="nav-link" href="/about">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/services">WHAT WE DO</a>
+            <a class="nav-link" href="/portfolio">PORTFOLIO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">NEWS & EVENTS</a>
+            <a class="nav-link" href="/cv">CV</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/location">WHERE WE WORK</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact">CONTACT US</a>
+            <a class="nav-link" href="/contact">CONTACT</a>
           </li>
         </ul>
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/location" element={<Location />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/cv" element={<CV />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/attorneys" element={<Attorneys />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-let image = require("../images/sub-01-attorneys.jpg");
 let image1 = require("../images/sub-01-staff.jpg");
 let image2 = require("../images/sub-01-reputation.jpg");
 let image3 = require("../images/sub-01-history.jpg");
@@ -13,9 +12,6 @@ export default function About() {
                         <p>WHO WE ARE</p>
                         <li class="active">
                             <a href="#" styles="color: white">Welcome</a>
-                            <li>
-                                <a href="/attorneys" styles="color: white">Attorneys</a>
-                            </li>
                             <li>
                                 <a href="#" styles="color: white">Staff</a>
                             </li>
@@ -31,7 +27,6 @@ export default function About() {
                         <iframe src="https://maps.google.com/maps?q=Houston,Texas&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
                             styles="border:0" allowfullscreen></iframe>
                     </div>
-                    <img src={require('../images/sub-01-attorneys.jpg')} />
                 </div>
 
                 
@@ -43,11 +38,6 @@ export default function About() {
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="card">
-                                    <div class="card-block">
-                                        <a href="#"><img src={image.default} alt="image not found" /></a>
-                                    </div>
-                                </div>
                                 <div class="card">
                                     <div class="card-block">
                                         <a href="#"><img src={image1.default} alt="image not found" /></a>

@@ -1,7 +1,7 @@
 import React from 'react';
 let image = require("../images/nza_slideshow.jpg");
 
-export default function Index() {
+export default function Home() {
     return (
         <React.Fragment>
             <main class="container">
